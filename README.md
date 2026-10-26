@@ -54,17 +54,20 @@ Full details: [`docs/hardware_upgrade.md`](docs/hardware_upgrade.md)
 ```
 jetbot/                 # Core library (original + modern_robot.py)
 demos/                  # Cool, ready-to-run demos (start here)
-  ├── yolo_follow.py    # Object following with YOLOv8
-  ├── web_dashboard.py  # Phone-friendly control + video
-  └── README.md
+simulation/             # Digital twin (kinematics + Isaac Sim)
+  ├── kinematics_twin.py
+  └── isaac_sim/jetbot_twin.py
 docs/
-  ├── INDIE_GUIDE.md    # Written for independent makers
-  ├── COOL_DEMOS.md     # What to build and in what order
-  └── hardware_upgrade.md
-ros2/                   # Future ROS 2 + Isaac ROS packages
-docker/modern/          # JetPack 6 oriented Dockerfile
-notebooks/              # Original educational notebooks (still useful)
-assets/                 # 3D printable chassis files
+  ├── INDIE_GUIDE.md
+  ├── COOL_DEMOS.md
+  ├── STUDENTS_AND_EDUCATORS.md
+  ├── build/            # Interactive assembly + video resources
+  ├── designs/          # JetNova
+  └── simulation/       # Isaac Sim twin guide
+ros2/                   # ROS 2 skeleton
+docker/modern/
+notebooks/
+tools/build_assistant.py
 ```
 
 ---
@@ -97,7 +100,7 @@ assets/                 # 3D printable chassis files
 | JetNova design path        | Done           |
 | Hardware upgrade guide     | Done           |
 | ROS 2 packages             | Skeleton       |
-| Isaac Sim digital twin     | Planned        |
+| Isaac Sim digital twin     | Done (kinematics tested + Isaac script) |
 
 ---
 
