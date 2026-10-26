@@ -1,0 +1,12 @@
+# Lightweight dependencies for the cool indie demos
+# Install on the Jetson (or your dev machine) with:
+#   pip install -r requirements-demos.txt
+
+numpy
+Pillow
+opencv-python
+ultralytics          # YOLOv8 – follow, find object
+flask                # web dashboard
+# Optional voice:
+# SpeechRecognition
+# pyaudio
