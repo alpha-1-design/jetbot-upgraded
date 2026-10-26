@@ -25,16 +25,12 @@ This version is rebuilt for what independent makers actually want in 2026:
 ### 3. Run the Best Demos
 
 ```bash
-# Modern robot abstraction (works even without hardware)
-python3 -c "from jetbot.modern_robot import Robot; r = Robot(); r.forward(0.3)"
-
-# Web dashboard – drive from your phone
-python3 demos/web_dashboard.py
-# Then open http://<jetson-ip>:8080
-
-# YOLO object following (the crowd-pleaser)
-python3 demos/yolo_follow.py                  # follow people
-python3 demos/yolo_follow.py --target cat     # follow cats
+./demo.sh dashboard      # drive from your phone
+./demo.sh follow         # YOLO person / object following
+./demo.sh find --target cup
+./demo.sh wander
+./demo.sh voice --keyboard
+./demo.sh build          # interactive build assistant
 ```
 
 ---
@@ -91,12 +87,17 @@ assets/                 # 3D printable chassis files
 | Modern robot abstraction   | Done           |
 | Web dashboard              | Done           |
 | YOLO following demo        | Done           |
+| Find-object demo           | Done           |
+| Smart wander               | Done           |
+| Voice commands             | Done           |
+| One-command demo launcher  | Done (`./demo.sh`) |
 | Indie + Cool Demos docs    | Done           |
+| Interactive build guide + videos | Done     |
+| Student & educator path    | Done           |
+| JetNova design path        | Done           |
 | Hardware upgrade guide     | Done           |
 | ROS 2 packages             | Skeleton       |
-| Voice commands             | Planned        |
 | Isaac Sim digital twin     | Planned        |
-| One-command demo launcher  | Next           |
 
 ---
 
