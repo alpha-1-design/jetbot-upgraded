@@ -6,11 +6,31 @@ Original JetBot (2019) was great for its time.
 This version is rebuilt for what independent makers actually want in 2026:
 
 - Cool, reliable demos that look good on video
-- Modern Jetson boards (Orin Nano Super / Orin NX)
+- Modern Jetson boards (Orin Nano Super / Orin NX) — **optional**
 - Phone-based control + live camera
 - YOLO object following that just works
 - Clear path from “weekend project” → serious robot
 - ROS 2 + Isaac ROS when you’re ready for mapping & real navigation
+
+---
+
+## You do **not** need fancy NVIDIA hardware to start
+
+Most of this project runs on a normal laptop or PC.
+
+| What you want to do | Need Jetson? | Need Isaac Sim? | What to run |
+|---------------------|--------------|-----------------|-------------|
+| Learn the system / read guides | No | No | Docs + `./demo.sh build` |
+| Test robot motion logic | No | No | `python3 simulation/tests/test_kinematics_twin.py` |
+| Try vision (YOLO) | No | No | Laptop webcam + `demos/yolo_follow.py` |
+| Drive a real robot from your phone | Jetson *or* Pi + motors | No | `./demo.sh dashboard` |
+| Full 3D digital twin | No | Yes (optional) | Isaac Sim script |
+
+- No motor HAT / no robot → code uses **dummy motors** (safe, nothing crashes)
+- No camera → skip vision demos; twin + docs still work
+- No 3D printer → cardboard, foam, toy-car parts are documented
+
+Start with what you have. Add Jetson / better parts later if you want.
 
 ---
 
